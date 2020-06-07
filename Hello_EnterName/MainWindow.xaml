@@ -1,0 +1,30 @@
+﻿<Window x:Class="Hello_EnterName.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hello_EnterName"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--Блок текста-->
+        <TextBlock 
+                   Height="24" 
+                   Margin="334,141,315,254" 
+                   Foreground="Red"
+                   Text="Enter your name please"/>
+
+        <!--Поле ввода-->
+        <TextBox Name="textBoxName"
+                 Width="100" 
+                 Height="24" 
+                 Margin="202,139,201,148" Text="" AcceptsTab="False">
+        </TextBox>
+        <!--Кнопка-->
+        <Button Width="100" 
+                Height="24" 
+                Content="Ok" 
+                Margin="202,182,200,105"
+                Click="Button_Click"></Button>
+    </Grid>
+</Window>
